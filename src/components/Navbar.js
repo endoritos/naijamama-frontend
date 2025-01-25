@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/App.css';
 
 const Navbar = () => {
   return (
-    <nav className="bg-primary shadow-md">
-      <div className="container mx-auto flex justify-between items-center py-4">
+    <nav className="navbar">
+      <div className="navbar-container">
         <div>
-          <Link to="/" className="text-primary-foreground text-lg font-semibold">Home</Link>
+          <Link to="/" className="nav-link">Home</Link>
         </div>
         <div>
-          <Link to="/about" className="text-primary-foreground hover:text-primary/80 px-4">About</Link>
-          <Link to="/services" className="text-primary-foreground hover:text-primary/80 px-4">Services</Link>
-          <Link to="/contact" className="text-primary-foreground hover:text-primary/80 px-4">Contact</Link>
+          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/services" className="nav-link">Services</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
         </div>
       </div>
     </nav>

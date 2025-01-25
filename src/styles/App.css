@@ -1,25 +1,75 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: gray;
+/* Navbar styles */
+.navbar {
+  background-color: #007bff; /* bg-primary */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* shadow-md */
 }
 
-nav {
-  background-color: #6200ea;
-  padding: 1em;
+.navbar-container {
+  max-width: 1200px; /* container */
+  margin: 0 auto; /* mx-auto */
+  display: flex; /* flex */
+  justify-content: space-between; /* justify-between */
+  align-items: center; /* items-center */
+  padding: 1rem 0; /* py-4 */
 }
 
-nav a {
-  color: white;
-  margin: 0 1em;
-  text-decoration: none;
+.nav-link {
+  color: #ffffff; /* text-primary-foreground */
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
 }
 
-nav a:hover {
-  text-decoration: underline;
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.8); /* hover:text-primary/80 */
+  padding: 0 1rem; /* px-4 */
 }
 
-h1 {
-  color: #6200ea;
+/* HomePage styles */
+.homepage {
+  background-size: cover; /* bg-cover */
+  background-position: center; /* bg-center */
+  height: 100vh; /* h-screen */
+  text-align: center; /* text-center */
+  color: #ffffff; /* text-white */
+}
+
+.homepage-title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.homepage-subtitle {
+  font-size: 3.75rem; /* text-6xl */
+  font-weight: 800; /* font-extrabold */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.homepage-text {
+  font-size: 1.5rem; /* text-2xl */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.homepage-contact {
+  font-size: 1.125rem; /* text-lg */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.homepage-button {
+  background-color: #ff5722; /* bg-accent */
+  color: #ffffff; /* text-accent-foreground */
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  border-radius: 0.5rem; /* rounded-lg */
+}
+
+.homepage-link {
+  color: rgba(255, 255, 255, 0.6); /* text-muted-foreground */
+}
+
+.homepage-link:hover {
+  text-decoration: underline; /* hover:underline */
+}
+
+.homepage-divider {
+  margin: 0 0.5rem; /* mx-2 */
 }
