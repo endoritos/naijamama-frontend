@@ -11,8 +11,11 @@ const Navbar = () => {
         </div>
         <div>
           <Link to="/about" className="nav-link">About</Link>
-          <Link to="/services" className="nav-link">Services</Link>
+          <Link to="/services" className="nav-link">Products</Link>
           <Link to="/contact" className="nav-link">Contact</Link>
+          <Link to="/users" className="nav-link">Users</Link>
+          {/* <Link to="/register" className="nav-link">Register</Link> // we don't need this right now */}
+          <Link to="/login" className="nav-link">Login</Link>
         </div>
       </div>
     </nav>

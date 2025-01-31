@@ -7,5 +7,8 @@ const API = axios.create({
 export const fetchUsers = () => API.get('/users');
 export const addUser = (user) => API.post('/users', user);
 
+export const registerUser = (userData) => API.post('/users', userData);
+export const loginUser = (credentials) => API.post('/login', credentials);
+
 export default API;
 

@@ -3,7 +3,8 @@ import '../styles/App.css';
 
 const HomePage = () => {
   return (
-    <div className="homepage" style={{ backgroundImage: "url('https://placehold.co/1920x1080')" }}>
+    <div className="homepage" style={{ backgroundImage: 'url(/opening.jpg)' }}>
+      {/* here the orginea pic form https://unsplash.com/photos/woman-standing-in-the-middle-of-wheat-field-GSh_PwsZsPQ */}
 
       <div className="flex flex-col items-center justify-center h-screen text-center text-white">
         <h1 className="homepage-title">Native </h1>
