@@ -1,8 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { fetchUsers } from '../services/api';
 
-const UsersPage = () => {
-  const [users, setUsers] = useState([]);
+
+
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+const UsersPage: React.FC = () => {
+  // Use the User type in the useState hook
+  const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
     const getUsers = async () => {

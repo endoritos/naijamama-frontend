@@ -1,21 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState , ChangeEvent , FormEvent} from 'react';
 import { loginUser } from '../services/api';
 import '../styles/LoginForm.css';
 
 const LoginForm = () => {
   const [credentials, setCredentials] = useState({
+    name: '',
     email: '',
     password: '',
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setCredentials({
       ...credentials,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     try {
       const response = await loginUser(credentials);

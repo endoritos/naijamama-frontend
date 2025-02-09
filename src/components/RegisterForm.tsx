@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { fetchUsers } from '../services/api';
 import { registerUser } from '../services/api';
 import '../styles/RegisterForm.css';
@@ -11,14 +11,14 @@ const RegisterForm = () => {
     phone:'',
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     try {
       const response = await registerUser(formData);
